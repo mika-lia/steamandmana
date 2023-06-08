@@ -1,0 +1,824 @@
+{
+	id: "7AF0110D736F7613"
+	group: "1CE7D72A5C80F345"
+	order_index: 0
+	filename: "malum"
+	title: "Malum"
+	icon: {
+		id: "malum:soul_stained_steel_scythe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "malum:soul_stained_steel_scythe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			shape: "pentagon"
+			subtitle: "Local grim reaper wanted!"
+			description: ["Malum is a very pretty mod about ripping the fragmented spirits out of your dead enemies and using them to craft powerful equipment and armor aswell as some very useful automation in the form of Totems."]
+			size: 2.0d
+			id: "328E40DEE0FD7745"
+			tasks: [{
+				id: "6D7717D6006390E4"
+				type: "checkmark"
+				title: "Malum"
+			}]
+			rewards: [{
+				id: "439FB5A55FC2A082"
+				type: "item"
+				item: "malum:encyclopedia_arcana"
+			}]
+		}
+		{
+			title: "Spirit fragments"
+			x: 6.0d
+			y: -4.5d
+			subtitle: "Can you find them all?"
+			description: ["There are 8 kinds of different spirits, each dropped by their specific mobs. Getting a good ammount of all of them is a must to progress. "]
+			dependencies: ["72B4290FBCDE8CE9"]
+			id: "749109DCA020EBEA"
+			tasks: [
+				{
+					id: "75CF372F54994248"
+					type: "item"
+					item: "malum:arcane_spirit"
+				}
+				{
+					id: "0D3260D054923760"
+					type: "item"
+					item: "malum:sacred_spirit"
+				}
+				{
+					id: "2BB6B34BEE3A175B"
+					type: "item"
+					item: "malum:wicked_spirit"
+				}
+				{
+					id: "1C2DACA14935373F"
+					type: "item"
+					item: "malum:earthen_spirit"
+				}
+				{
+					id: "5C5286D7AC6C679F"
+					type: "item"
+					item: "malum:infernal_spirit"
+				}
+				{
+					id: "5FD4D1E2733038D3"
+					type: "item"
+					item: "malum:aerial_spirit"
+				}
+				{
+					id: "4417D253CB0DBE19"
+					type: "item"
+					item: "malum:aqueous_spirit"
+				}
+			]
+			rewards: [{
+				id: "1EDBD4E458CF8506"
+				type: "item"
+				item: "malum:spirit_jar"
+			}]
+		}
+		{
+			title: "Soulstone ore"
+			x: 3.0d
+			y: -1.0d
+			description: [
+				"Your first step into your soul ripping quest is smelting some raw soulstone to get processed soulstone."
+				"You can find more soulstone ore the deeper you go."
+			]
+			dependencies: ["328E40DEE0FD7745"]
+			id: "5E90EE50B938797E"
+			tasks: [
+				{
+					id: "05F24EC7B1C4CE76"
+					type: "item"
+					item: "malum:raw_soulstone"
+				}
+				{
+					id: "136B140211BCABAE"
+					type: "item"
+					item: "malum:processed_soulstone"
+				}
+			]
+			rewards: [{
+				id: "036AA74274FD116C"
+				type: "item"
+				item: "malum:cluster_of_brilliance"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			subtitle: "Start rippin!"
+			description: ["With the crude scythe you can start gathering spirits from killed mobs."]
+			dependencies: ["5E90EE50B938797E"]
+			id: "72B4290FBCDE8CE9"
+			tasks: [{
+				id: "426E101F8618E11D"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4723815F1CCB9E12"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			description: ["The spirit altar is the main workstation for spirit manipulation. With it you can start making your first tools and equipment"]
+			dependencies: [
+				"5E90EE50B938797E"
+				"458ED09F7FFC20CC"
+			]
+			id: "2EC653B8BECFA4A7"
+			tasks: [
+				{
+					id: "467422833A99D84A"
+					type: "item"
+					item: "malum:spirit_altar"
+				}
+				{
+					id: "080307CE0501C6CD"
+					type: "item"
+					item: "malum:runewood_item_pedestal"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "1F26B8AF700293C0"
+				type: "item"
+				item: "malum:hex_ash"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["Runewood is the main ingredient for almost everything in Malum. Exposed runewood logs can be right clicked with a bottle to extract sap which can be used to make useful potions."]
+			dependencies: ["328E40DEE0FD7745"]
+			id: "458ED09F7FFC20CC"
+			tasks: [
+				{
+					id: "5140DFD95D1BE496"
+					type: "item"
+					item: "malum:runewood_log"
+				}
+				{
+					id: "24B744DB2D84F9F4"
+					type: "item"
+					item: "malum:exposed_runewood_log"
+				}
+			]
+			rewards: [{
+				id: "1A03A16F14395C90"
+				type: "item"
+				item: "malum:runewood_sapling"
+				count: 16
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.5d
+			description: ["The final and most difficult spirit to come by. You'll find this one very useful later on. "]
+			dependencies: ["72B4290FBCDE8CE9"]
+			id: "63516622084C66F5"
+			tasks: [{
+				id: "2F8C6D9F19C2665F"
+				type: "item"
+				item: "malum:eldritch_spirit"
+			}]
+			rewards: [
+				{
+					id: "5E363C46E7471E49"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "5CAAC9491807EAB5"
+					type: "item"
+					item: "malum:spirit_jar"
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: -2.5d
+			description: ["An upgrade to the crude scythe in every way. The soulstained scythe can also be enchanted with unique effects to make it even deadlier."]
+			dependencies: [
+				"72B4290FBCDE8CE9"
+				"46433569549127F5"
+			]
+			id: "13088998E6A85619"
+			tasks: [{
+				id: "7ED1E9A1D5D52F68"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			dependencies: ["2EC653B8BECFA4A7"]
+			id: "46433569549127F5"
+			tasks: [{
+				id: "059A786C16F74255"
+				type: "item"
+				item: "malum:soul_stained_steel_ingot"
+			}]
+			rewards: [{
+				id: "72CC16AC49D530DD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Soulstained tools"
+			x: 12.5d
+			y: 0.0d
+			description: ["Soulstained tools deal magic damage on top of physical damage."]
+			dependencies: ["46433569549127F5"]
+			optional: true
+			id: "4DAB5C038AA4EE2F"
+			tasks: [
+				{
+					id: "764FE4F089061F4A"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "012DC17B174DE6AF"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7FFF9C7EBA469AFF"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7D99762BABB7BA73"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "40DC1ADDAA0A8750"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "794C8931FE227323"
+					type: "item"
+					item: "malum:alchemical_calx"
+				}
+				{
+					id: "5EC786DE46A3E4D3"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			description: ["The soulstained sword while also dealing magic damage can be upgraded to an even better weapon."]
+			dependencies: ["46433569549127F5"]
+			id: "00F35943BC7AFEC7"
+			tasks: [{
+				id: "4AF6B4DE354F9A57"
+				type: "item"
+				item: {
+					id: "malum:soul_stained_steel_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "22195C76DF5A4630"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Soulstained set"
+			x: 12.5d
+			y: -1.5d
+			description: ["The soulstained armor is a poweful one. It gives you extra hearts that acts like a shield, blocking all damage."]
+			dependencies: ["46433569549127F5"]
+			id: "6B5E0B4A6C915915"
+			tasks: [
+				{
+					id: "31454A7AD96ECF97"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1996549B0D12EFDB"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6096D8EFD8E8208D"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60F71DB7E1005CCD"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "264C5F908333452D"
+				type: "item"
+				item: "malum:ether"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 1.5d
+			dependencies: ["00F35943BC7AFEC7"]
+			id: "7911262917DFD872"
+			tasks: [{
+				id: "4A315D94415EA4EE"
+				type: "item"
+				item: {
+					id: "malum:tyrving"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			description: ["The spirit crucible is a powerful tool, it can be used to mass produce a bunch of powders and all ores! As well as repairing your equipment and armor."]
+			dependencies: ["2EC653B8BECFA4A7"]
+			id: "3C82DC205A344E30"
+			tasks: [{
+				id: "1EA233CF80823983"
+				type: "item"
+				item: "malum:spirit_crucible"
+			}]
+			rewards: [{
+				id: "5B50A0A6E2B5A56A"
+				type: "item"
+				item: {
+					id: "malum:alchemical_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "1CCAA0DC84F25A1F"
+			tasks: [{
+				id: "77323420FB886941"
+				type: "item"
+				item: {
+					id: "malum:iron_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "7FE3106FF8CAE8A7"
+			tasks: [{
+				id: "0D581E9CDD2F462E"
+				type: "item"
+				item: {
+					id: "malum:copper_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "69A5DE422ADD5E07"
+			tasks: [{
+				id: "148A40648923D9ED"
+				type: "item"
+				item: {
+					id: "malum:gold_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "07412E52159A37DD"
+			tasks: [{
+				id: "272B708DBCE3D153"
+				type: "item"
+				item: {
+					id: "malum:lead_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "3F1B8008551C216A"
+			tasks: [{
+				id: "32AD381CEFE3F07D"
+				type: "item"
+				item: {
+					id: "malum:silver_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "628753961885D6D0"
+			tasks: [{
+				id: "339D8841542E9F61"
+				type: "item"
+				item: {
+					id: "malum:aluminum_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "3BEBC9CCE8363228"
+			tasks: [{
+				id: "1A9DC0123F0F3A04"
+				type: "item"
+				item: {
+					id: "malum:nickel_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "05FB5A2B437ADF5C"
+			tasks: [{
+				id: "454E22BDDC0DEAAB"
+				type: "item"
+				item: {
+					id: "malum:uranium_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "05F87840A59875AA"
+			tasks: [{
+				id: "434846B8BFFC6643"
+				type: "item"
+				item: {
+					id: "malum:osmium_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 9.5d
+			hide_dependency_lines: true
+			dependencies: ["3C82DC205A344E30"]
+			id: "281DF09D54E24BB6"
+			tasks: [{
+				id: "1C15E15FE5F93F1F"
+				type: "item"
+				item: {
+					id: "malum:zinc_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.5d
+			dependencies: ["3C82DC205A344E30"]
+			id: "24ACF4A8DE34DE02"
+			tasks: [{
+				id: "5D2560E075613AF8"
+				type: "item"
+				item: {
+					id: "malum:tin_impetus"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Rituals"
+			x: 5.5d
+			y: 2.0d
+			description: [
+				"Runewood totems are the backbone of all automation in Malum. Placing up to 5 runewood logs on top of a base and imbuing them with spirits can have varying effects. "
+				"You can read about all of them in the book provided by the mod."
+			]
+			dependencies: ["2EC653B8BECFA4A7"]
+			id: "0A4ADBBA791C728D"
+			tasks: [{
+				id: "7EA4852CD7023A25"
+				type: "item"
+				item: "malum:runewood_totem_base"
+			}]
+			rewards: [{
+				id: "6B025B0DA9BDCF59"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			dependencies: ["0A4ADBBA791C728D"]
+			id: "41FF7BBA97EB790B"
+			tasks: [{
+				id: "168259C6CCB1C119"
+				type: "item"
+				item: "malum:soulwood_totem_base"
+			}]
+			rewards: [{
+				id: "0625CC819EBB6FBE"
+				type: "item"
+				item: "malum:soulwood_growth"
+				count: 6
+			}]
+		}
+		{
+			title: "Soulhunter set"
+			x: 8.5d
+			y: 4.0d
+			description: ["The light version of the soulstained set."]
+			dependencies: ["3D779516B3C6216F"]
+			id: "1A9D9E205A2CD6AB"
+			tasks: [
+				{
+					id: "4F4801221E52BE3C"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "02CAC3417A4FCE3D"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_robe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B438D078CC26048"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D4DDE50F51426E0"
+					type: "item"
+					item: {
+						id: "malum:soul_hunter_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "218053C142F6DC04"
+				type: "item"
+				item: "malum:spirit_pouch"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.0d
+			dependencies: ["2EC653B8BECFA4A7"]
+			id: "3D779516B3C6216F"
+			tasks: [{
+				id: "29D52C755AA85F46"
+				type: "item"
+				item: "malum:spirit_fabric"
+			}]
+			rewards: [{
+				id: "74261EF7136E412C"
+				type: "xp_levels"
+				ignore_reward_blocking: true
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			description: ["For various trinkets and soul jars."]
+			dependencies: ["2EC653B8BECFA4A7"]
+			id: "7E4239A28CB51E1E"
+			tasks: [{
+				id: "1EC1F4B7ACD41811"
+				type: "item"
+				item: "malum:hallowed_gold_ingot"
+			}]
+			rewards: [{
+				id: "045CBBB6AF34D9BD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			description: ["The runewood obelisks serve as a way to speed up the crafting of a spirit altar. You can place up to 4."]
+			dependencies: ["2EC653B8BECFA4A7"]
+			id: "475127CA5DC53150"
+			tasks: [{
+				id: "578D204611B8FBC9"
+				type: "item"
+				item: "malum:runewood_obelisk"
+			}]
+			rewards: [{
+				id: "77A224DAF9F76CB2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.0d
+			description: ["Brilliant obelisks are like bookshelves but smaller and prettier. One of these equals the power of 5 bookshelves near your enchanting table."]
+			dependencies: ["475127CA5DC53150"]
+			id: "31A4F209936C0B39"
+			tasks: [{
+				id: "7AAEA71CC5C8F4B6"
+				type: "item"
+				item: "malum:brilliant_obelisk"
+			}]
+			rewards: [{
+				id: "46D3C80EBC2F813D"
+				type: "item"
+				item: "malum:cluster_of_brilliance"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,21 @@
+{
+	id: "205B9608E3BEC328"
+	group: "642DA34FF963F368"
+	order_index: 1
+	filename: "immersive_engineering"
+	title: "Immersive Engineering"
+	icon: "immersiveengineering:light_engineering"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "6CFAD62BBA274E95"
+		tasks: [{
+			id: "1CE6F84024B1C7A9"
+			type: "checkmark"
+			title: "Immersive Engineering"
+		}]
+	}]
+	quest_links: [ ]
+}

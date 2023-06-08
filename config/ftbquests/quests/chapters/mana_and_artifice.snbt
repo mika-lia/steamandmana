@@ -1,0 +1,22 @@
+{
+	id: "77FAA7A79F1A8772"
+	group: "4D8A336DC5496C57"
+	order_index: 0
+	filename: "mana_and_artifice"
+	title: "Mana and Artifice"
+	icon: "mna:guide_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Mana and Artifice"
+		x: 0.0d
+		y: 0.0d
+		id: "7A2EE4722F594625"
+		tasks: [{
+			id: "43B16F8BB335F561"
+			type: "checkmark"
+			title: "Ars Noveau"
+		}]
+	}]
+	quest_links: [ ]
+}

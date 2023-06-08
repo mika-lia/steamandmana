@@ -1,0 +1,212 @@
+{
+	id: "058B713A375AC21D"
+	group: ""
+	order_index: 1
+	filename: "useful_mods_to_try"
+	title: "Useful mods to try"
+	icon: "alexsmobs:mimicream"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tinkers Construct"
+			icon: {
+				id: "tconstruct:tinkers_anvil"
+				Count: 1b
+				tag: {
+					texture: "tcintegrations:bronze_block"
+				}
+			}
+			x: 0.0d
+			y: -1.5d
+			subtitle: "Tinkering"
+			description: ["One of the best mods for custom tools and crossbows. With it you can make a tool as powerful as you want... with the right materials."]
+			size: 1.5d
+			optional: true
+			progression_mode: "flexible"
+			id: "42B2480F217B03CB"
+			tasks: [
+				{
+					id: "5E91B93E321EC567"
+					type: "item"
+					title: "Any #tconstruct:tables"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:tables"
+						}
+					}
+				}
+				{
+					id: "0BB7E5B0B2A79025"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+			]
+			rewards: [{
+				id: "3DDB9B890E942432"
+				type: "item"
+				item: "tconstruct:rose_gold_ingot"
+			}]
+		}
+		{
+			title: "The smeltery"
+			x: 0.0d
+			y: -3.5d
+			description: ["The next step in tool making. Melt materials and pour them into casts to make shiny new tools."]
+			dependencies: ["42B2480F217B03CB"]
+			id: "59633D9D1A667791"
+			tasks: [
+				{
+					id: "05BE0E11FB1A3B42"
+					type: "item"
+					item: {
+						id: "tconstruct:smeltery_controller"
+						Count: 1b
+						tag: {
+							texture: "tconstruct:seared_bricks"
+						}
+					}
+				}
+				{
+					id: "06F03CC0C71FD2FC"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "1AB8427D1584D631"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_chute"
+						Count: 1b
+						tag: {
+							texture: "tconstruct:seared_stone"
+						}
+					}
+				}
+				{
+					id: "06D563A4DD749EC6"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+			rewards: [{
+				id: "0243E9D3624BCDB6"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 6
+			}]
+		}
+		{
+			title: "Immersive Aircraft"
+			icon: "immersive_aircraft:biplane"
+			x: 3.0d
+			y: 0.5d
+			description: ["Everybody loves flying. Specially when it's inside a flimsy wooden contraption powered by steam and a bit of courage."]
+			size: 1.5d
+			optional: true
+			id: "0E06761EB199770F"
+			tasks: [{
+				id: "2F61E0E1A35545C8"
+				type: "item"
+				item: "immersive_aircraft:engine"
+			}]
+			rewards: [{
+				id: "5259A5F351DAFB76"
+				type: "item"
+				item: "immersive_aircraft:hull"
+				count: 2
+			}]
+		}
+		{
+			title: "Ultimate Car Mod"
+			icon: "car:oak_body"
+			x: -3.0d
+			y: 0.5d
+			description: [
+				"Your first powered transportation! Cars are a reliable and fast way to get around your world. "
+				"Just don't forget to build roads!"
+			]
+			hide_dependency_lines: false
+			size: 1.5d
+			optional: true
+			id: "26C7C006E90AC201"
+			tasks: [
+				{
+					id: "5E823A20EB2731E3"
+					type: "item"
+					item: "car:engine_3_cylinder"
+				}
+				{
+					id: "0997161CD3E46735"
+					type: "item"
+					item: "car:car_workshop"
+				}
+				{
+					id: "0154D66D42C53E68"
+					type: "item"
+					item: "car:car_workshop_outter"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "66CA0A54F1AEB681"
+				type: "item"
+				item: "car:asphalt"
+				count: 32
+			}]
+		}
+		{
+			title: "Mob Grinding Utils"
+			icon: "mob_grinding_utils:saw"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "Explosive!"
+			description: [
+				"Your goto mob farming mod. This mod has everything, from spawners to brutal killing machines and fans for pushing mobs around. "
+				"Use a swab to get a sample of DNA from a mob then feed that to a chicken to get a spawn egg"
+			]
+			size: 1.5d
+			optional: true
+			id: "046F6E309069E966"
+			tasks: [
+				{
+					id: "0C42717AD088721A"
+					type: "item"
+					item: "mob_grinding_utils:saw"
+				}
+				{
+					id: "7164EE75E267F3EB"
+					type: "item"
+					item: "mob_grinding_utils:gm_chicken_feed"
+				}
+			]
+			rewards: [{
+				id: "32E928FFA32EA128"
+				type: "item"
+				item: "mob_grinding_utils:fan"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			subtitle: "One of the few!"
+			description: ["Redstone controllabe spawner. "]
+			dependencies: ["046F6E309069E966"]
+			id: "73034512D51D9960"
+			tasks: [{
+				id: "56CD444C1AFA87D6"
+				type: "item"
+				item: "mob_grinding_utils:entity_spawner"
+			}]
+			rewards: [{
+				id: "5F54C8B8E2F5B020"
+				type: "item"
+				item: "mob_grinding_utils:solid_xp_baby"
+				count: 6
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,21 @@
+{
+	id: "401928E0C93949A4"
+	group: "5DBD31AE53B74793"
+	order_index: 2
+	filename: "biomancy"
+	title: "Biomancy"
+	icon: "biomancy:primordial_cradle"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "2B1BEF654A7139ED"
+		tasks: [{
+			id: "207BC41FF5450EC1"
+			type: "checkmark"
+			title: "Biomancy"
+		}]
+	}]
+	quest_links: [ ]
+}

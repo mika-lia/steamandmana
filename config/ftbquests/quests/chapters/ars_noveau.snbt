@@ -1,0 +1,21 @@
+{
+	id: "7233CD6D591C3F6A"
+	group: "4D8A336DC5496C57"
+	order_index: 1
+	filename: "ars_noveau"
+	title: "Ars Noveau"
+	icon: "ars_nouveau:creative_spell_book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "5460D8B3517AC151"
+		tasks: [{
+			id: "7302CB24CFEE076A"
+			type: "checkmark"
+			title: "Ars Noveau"
+		}]
+	}]
+	quest_links: [ ]
+}

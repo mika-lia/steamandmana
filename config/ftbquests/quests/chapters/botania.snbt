@@ -1,0 +1,21 @@
+{
+	id: "2DAB2F555357F561"
+	group: "1E4CEC30D13E051C"
+	order_index: 0
+	filename: "botania"
+	title: "Botania"
+	icon: "botania:dandelifeon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "668025C4A63839BB"
+		tasks: [{
+			id: "36EE125034775BCC"
+			type: "checkmark"
+			title: "Botania"
+		}]
+	}]
+	quest_links: [ ]
+}

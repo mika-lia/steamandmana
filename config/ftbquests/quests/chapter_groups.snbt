@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "642DA34FF963F368", title: "Engineering" }
+		{ id: "4D8A336DC5496C57", title: "Sorcery and Wizardry" }
+		{ id: "5DBD31AE53B74793", title: "Hemomancy and Biomancy" }
+		{ id: "1E4CEC30D13E051C", title: "Druidry and Natural magic" }
+		{ id: "1CE7D72A5C80F345", title: "Soul Magic" }
+		{ id: "793FF03E3A9634FD", title: "Theurgy" }
+	]
+}

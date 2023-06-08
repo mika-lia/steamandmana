@@ -1,0 +1,21 @@
+{
+	id: "59CF1F8A49778CE7"
+	group: "1E4CEC30D13E051C"
+	order_index: 1
+	filename: "natures_aura"
+	title: "Roots"
+	icon: "rootsclassic:crystal_staff"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "7814057A5987C567"
+		tasks: [{
+			id: "5DC7B47F8E7A7C88"
+			type: "checkmark"
+			title: "Roots"
+		}]
+	}]
+	quest_links: [ ]
+}

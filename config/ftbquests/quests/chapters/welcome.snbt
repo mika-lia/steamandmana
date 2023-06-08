@@ -1,0 +1,185 @@
+{
+	id: "1188AE44812E6A0C"
+	group: ""
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome"
+	icon: "mna:debug_wand"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Steam and Mana"
+			icon: "mna:debug_wand"
+			disable_toast: true
+			x: 0.0d
+			y: -0.5d
+			shape: "hexagon"
+			subtitle: "Steamy wizard orbs"
+			description: [
+				"This questbook will guide you through the different mods in the pack aswell as their progression. You don't have to follow it but it will certainly prove useful later on. "
+				""
+				"If you like the pack or have any sort of question or bug report please contact us at our Discord"
+			]
+			size: 3.0d
+			optional: true
+			progression_mode: "flexible"
+			id: "2E02A9CBA4D311B7"
+			tasks: [{
+				id: "643F64CC2A726AA4"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "2AD773F21949E573"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			icon: "cataclysm:altar_of_fire"
+			x: 0.0d
+			y: 4.0d
+			description: ["For those that want an extra challenge we have also added a few bosses to kill and difficult dungeons to explore!"]
+			size: 1.5d
+			optional: true
+			id: "03F49B02FC2B954F"
+			tasks: [{
+				id: "74F6D6BC5341C4F7"
+				type: "checkmark"
+				title: "Challenges"
+			}]
+		}
+		{
+			icon: "cataclysm:gauntlet_of_guard"
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "04C5706B8781A22B"
+			tasks: [{
+				id: "2B0286BB5715EDF2"
+				type: "kill"
+				icon: "cataclysm:gauntlet_of_guard"
+				entity: "cataclysm:ender_golem"
+				value: 1L
+			}]
+		}
+		{
+			icon: "cataclysm:void_core"
+			x: 0.0d
+			y: 7.0d
+			dependencies: ["04C5706B8781A22B"]
+			id: "3293299D4BF3A048"
+			tasks: [{
+				id: "76694D6EF0D0DE41"
+				type: "kill"
+				icon: "cataclysm:void_core"
+				entity: "cataclysm:ender_guardian"
+				value: 1L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "657F18CEC4F43FAB"
+			tasks: [{
+				id: "1F1A952DB0BBD47A"
+				type: "kill"
+				icon: {
+					id: "cataclysm:monstrous_helm"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "cataclysm:netherite_monstrosity"
+				value: 1L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.5d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "63E3D55BD24028A3"
+			tasks: [{
+				id: "5C5C020520589129"
+				type: "kill"
+				icon: "cataclysm:burning_ashes"
+				entity: "cataclysm:ignited_revenant"
+				value: 1L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.0d
+			dependencies: ["63E3D55BD24028A3"]
+			id: "094914716E62528C"
+			tasks: [{
+				id: "00F74DA92DA7FB62"
+				type: "kill"
+				icon: {
+					id: "cataclysm:ignitium_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "cataclysm:ignis"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "aquamirae:three_bolt_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.0d
+			y: 5.5d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "7B56975DA8A2DE2A"
+			tasks: [{
+				id: "18F9BDF55CC57D2A"
+				type: "kill"
+				icon: {
+					id: "aquamirae:three_bolt_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "aquamirae:captain_cornelia"
+				value: 1L
+			}]
+		}
+		{
+			title: "Find the Infernal altar"
+			x: 3.0d
+			y: 5.5d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "7242404B78806BE2"
+			tasks: [{
+				id: "3566F9C6D39AB450"
+				type: "structure"
+				icon: "mna:greater_mote_fire"
+				structure: "incendium:infernal_altar"
+			}]
+		}
+		{
+			title: "Find the Sanctum"
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "4A43DAE1272F220C"
+			tasks: [{
+				id: "22D2FD8063A72587"
+				type: "structure"
+				icon: "minecraft:totem_of_undying"
+				structure: "incendium:sanctum"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

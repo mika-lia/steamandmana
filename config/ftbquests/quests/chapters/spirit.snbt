@@ -1,0 +1,369 @@
+{
+	id: "5753797539250655"
+	group: "1CE7D72A5C80F345"
+	order_index: 1
+	filename: "spirit"
+	title: "Spirit"
+	icon: "spirit:soul_cage"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "spirit:soul_cage"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Spirit is a small but useful mod. With it you can gather the souls of mobs you killed to empower your weapons or make mob spawners! "
+				"This mod offers one of the only ways to make a mob farm in Steam and Mana."
+			]
+			dependencies: ["46433569549127F5"]
+			size: 2.0d
+			id: "098D04402F54F9EB"
+			tasks: [{
+				id: "5F779D8342F1229B"
+				type: "checkmark"
+				title: "Spirit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["Soul powder is obtained by burning glowstone in a soul fire. You can also use Crate's haunting mechanic to mass produce these."]
+			dependencies: ["098D04402F54F9EB"]
+			id: "7532171D4B1AE96F"
+			tasks: [
+				{
+					id: "2CF043120B1CE2F2"
+					type: "item"
+					item: "spirit:soul_powder"
+				}
+				{
+					id: "187E927D848BF617"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+			]
+			rewards: [{
+				id: "5539914E91F4DDF3"
+				type: "item"
+				item: "minecraft:quartz_block"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: ["By arranging 4 soul powder blocks with a soul fire in the middle you can burn some soulstained steel ingots to make soul steel ingots."]
+			dependencies: ["7532171D4B1AE96F"]
+			id: "1F725D1484E5B285"
+			tasks: [{
+				id: "1F7073BEF956F400"
+				type: "item"
+				item: "spirit:soul_steel_ingot"
+			}]
+			rewards: [{
+				id: "3BC371EE5D998158"
+				type: "item"
+				item: "spirit:soul_powder_block"
+				count: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			description: [
+				"Burning a soul powder into a soul fire surrounded by 4 blocks of quartz will give you a soul crystal shard and consume the blocks."
+				"With a shard you can start storing the souls of killed mobs but you will want to keep upgrading it."
+			]
+			dependencies: ["7532171D4B1AE96F"]
+			id: "29CF577E334D78AB"
+			tasks: [
+				{
+					id: "5B92887F5C325FDD"
+					type: "item"
+					item: "spirit:soul_crystal_shard"
+				}
+				{
+					id: "6F2747E8E2ABBB09"
+					type: "item"
+					item: "minecraft:quartz_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "6531E15F9A45BEF7"
+				type: "item"
+				item: "spirit:soul_slate"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			description: [
+				"With a crude soul crystal you can now store more souls but theres still a step to go until you can use the souls full potential."
+				"The crystal can be made with a soul fire surrounded by 4 blocks of soul slate. This will consume the blocks."
+			]
+			dependencies: ["64B406D13E426A8A"]
+			id: "7C03D2E57E9C37B9"
+			tasks: [{
+				id: "15F5AB660A58209A"
+				type: "item"
+				item: "spirit:crude_soul_crystal"
+			}]
+			rewards: [
+				{
+					id: "6256C8A065B5559B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "52DB72BF9092A348"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			description: [
+				"The final step is made by surrounding a soul fire with 4 soul glass blocks and burning a crude soul crystal. Consuming the blocks."
+				"Crystals can only store a single mob type soul. Once it absorbs 64 souls the crystal will be upgraded to the next tier."
+			]
+			dependencies: ["33B7F491D3BAD524"]
+			id: "71522F5E89660C89"
+			tasks: [{
+				id: "60FC906FDE689A78"
+				type: "item"
+				item: "spirit:soul_crystal"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			description: [
+				"The soul slate is used in the next step of upgrading our crystal."
+				"It can be made by burning deepslate in a soul fire. Can also be automated with Create's haunting."
+			]
+			dependencies: ["29CF577E334D78AB"]
+			id: "64B406D13E426A8A"
+			tasks: [{
+				id: "5728979DF258B2B5"
+				type: "item"
+				item: "spirit:soul_slate"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "06FEA025C70298ED"
+					type: "item"
+					item: "spirit:pedestal"
+				}
+				{
+					id: "15C490FE67D3C600"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			description: ["Surrounding a soul fire with 4 lapis lazuli blocks and burning a tinted glass block will give you soul glass. This will not consume the blocks."]
+			dependencies: ["7C03D2E57E9C37B9"]
+			id: "33B7F491D3BAD524"
+			tasks: [{
+				id: "50E6DFA72EF98DAE"
+				type: "item"
+				item: "spirit:soul_glass"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "7BCA5DE584DA67A4"
+					type: "item"
+					item: "spirit:pedestal"
+				}
+				{
+					id: "2447AA4CDBFF3BFB"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			description: [
+				"Soul steel weapons and tools can be empowered (v key) when you have a soul crystal with at least 1 soul in it. Each attack of the tool or weapon spends 1 soul."
+				"The attack changes depending on the mob soul that inhabits the crystal."
+			]
+			dependencies: ["1F725D1484E5B285"]
+			id: "147E1490F83D6651"
+			tasks: [{
+				id: "4453D0A58A33EFDC"
+				type: "item"
+				item: {
+					id: "spirit:soul_steel_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Soul Steel tools"
+			x: 6.5d
+			y: 3.0d
+			dependencies: ["1F725D1484E5B285"]
+			id: "4EA0172E8690C6A4"
+			tasks: [
+				{
+					id: "485D605C592AFF56"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6C4602FC34AB1CCE"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "57162434DCDFA310"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "024688C9A14D82CE"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5A663B167AAA5C54"
+					type: "item"
+					item: "spirit:soul_steel_ingot"
+				}
+				{
+					id: "587F31261A37367E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			description: ["The bow uses souls to shoot instead of arrows."]
+			dependencies: ["1F725D1484E5B285"]
+			id: "42BDC3E7CAE66AFE"
+			tasks: [{
+				id: "47A50A8069ED43C1"
+				type: "item"
+				item: {
+					id: "spirit:soul_steel_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: 0.0d
+			description: [
+				"The soul cage is a mob spawner that uses the souls inside your crystal. You can spawn any mob with it as long as you have enough souls of that mob inside your crystal."
+				"To make a soul cage you need to burn a broken spawner in a soul fire surrounded by 4 soul steel ingot blocks."
+			]
+			dependencies: ["71522F5E89660C89"]
+			size: 1.5d
+			id: "694EDACBB7C838D3"
+			tasks: [{
+				id: "66529A1B10A8BFB3"
+				type: "item"
+				item: "spirit:soul_cage"
+			}]
+			rewards: [
+				{
+					id: "27F618B2E94C14A9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "1C863DC8BC34EB2C"
+					type: "item"
+					item: "mob_grinding_utils:spikes"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			description: ["Crystal pedestals can be used to clear soul crystals of souls."]
+			dependencies: ["64B406D13E426A8A"]
+			id: "097673A4AD16935C"
+			tasks: [{
+				id: "0DD1DC62F8D1DE8C"
+				type: "item"
+				item: "spirit:crystal_pedestal"
+			}]
+			rewards: [{
+				id: "6EB6EBAEE84D5A66"
+				type: "item"
+				item: "spirit:pedestal"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.5d
+			description: ["A soul pedestal is used in rituals to summon any mob you want. "]
+			dependencies: ["097673A4AD16935C"]
+			id: "01A7BE725CE35B1F"
+			tasks: [
+				{
+					id: "00878D2EB082A9DF"
+					type: "item"
+					item: "spirit:soul_pedestal"
+				}
+				{
+					id: "01442556C21A5C91"
+					type: "item"
+					item: "spirit:pedestal"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "40278544A7365260"
+				type: "item"
+				item: "minecraft:villager_spawn_egg"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

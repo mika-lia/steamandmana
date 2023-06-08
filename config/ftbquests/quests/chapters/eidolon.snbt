@@ -1,0 +1,21 @@
+{
+	id: "2CB01B065F8C540B"
+	group: "793FF03E3A9634FD"
+	order_index: 1
+	filename: "eidolon"
+	title: "Eidolon"
+	icon: "eidolon:unholy_symbol"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "3EC248B6FB99254A"
+		tasks: [{
+			id: "6BDBD4C70B973CF0"
+			type: "checkmark"
+			title: "Eidolon"
+		}]
+	}]
+	quest_links: [ ]
+}

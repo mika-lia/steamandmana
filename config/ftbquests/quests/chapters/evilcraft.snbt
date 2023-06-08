@@ -1,0 +1,32 @@
+{
+	id: "78CD307BE145B0B6"
+	group: "5DBD31AE53B74793"
+	order_index: 1
+	filename: "evilcraft"
+	title: "EvilCraft"
+	icon: {
+		id: "evilcraft:blood_infuser"
+		Count: 1b
+		tag: { }
+		ForgeCaps: {
+			Parent: {
+				FluidName: "minecraft:empty"
+				Amount: 0
+				capacity: 10000
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "50D9ED4CAA2E1BAB"
+		tasks: [{
+			id: "5DE84A4D226725CC"
+			type: "checkmark"
+			title: "EvilCraft"
+		}]
+	}]
+	quest_links: [ ]
+}

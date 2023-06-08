@@ -1,0 +1,255 @@
+{
+	id: "17B7AAAACA182CF0"
+	group: "642DA34FF963F368"
+	order_index: 0
+	filename: "engineering"
+	title: "Create"
+	icon: "create:blaze_burner"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "create:goggles"
+			x: -8.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Welcome to Create"
+			description: [
+				"Create is a steampunk themed tech mod based around rotational power and multiblock machines made for automation. "
+				"In this chapter we're going to be exploring the mod's usual progression and some extra steps made specifically for this modpack!"
+			]
+			size: 2.0d
+			id: "7F970AA59A3B1D1F"
+			tasks: [{
+				id: "6DC0590F5A2A15ED"
+				type: "checkmark"
+				title: "Create questline"
+			}]
+			rewards: [
+				{
+					id: "26FB185DB1F4EA24"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "54346CBE0A7BC05B"
+					type: "item"
+					item: "create:wrench"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			dependencies: ["7F970AA59A3B1D1F"]
+			id: "1F346287B2EFD946"
+			tasks: [{
+				id: "509146BB42F72F70"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "30E8595CF1DDF1D4"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 2
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			dependencies: ["1F346287B2EFD946"]
+			id: "6819432D173B6C7B"
+			tasks: [{
+				id: "16CA38D951CFD751"
+				type: "item"
+				title: "Any #extendedgears:small_cogwheel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "extendedgears:small_cogwheel"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.0d
+			dependencies: ["1F346287B2EFD946"]
+			id: "559A73AF2A557437"
+			tasks: [{
+				id: "20C3AB91133A5997"
+				type: "item"
+				title: "Any #extendedgears:large_cogwheel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "extendedgears:large_cogwheel"
+					}
+				}
+			}]
+		}
+		{
+			title: "Windmill"
+			x: -3.5d
+			y: -1.5d
+			description: [
+				"Windmills are an early game power source for rotation. They can be made with a windmill bearing and a minimum of 8 sails."
+				"Right clicking on the windmill bearing with 8 sails attached will build the contraption. More sails = more power"
+			]
+			dependencies: ["1F346287B2EFD946"]
+			id: "05048DCA3B3AFD2E"
+			tasks: [
+				{
+					id: "79575DFDE59F4668"
+					type: "item"
+					item: "create:white_sail"
+				}
+				{
+					id: "17DD33BA605089DB"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+			]
+			rewards: [{
+				id: "1F0B87D0C2712C90"
+				type: "item"
+				item: "create:shaft"
+				count: 2
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			description: ["Water wheels are an early game source of rotation power. Place a water source block anywhere where the water can flow through the wheel's fins and you have an easy and cheap source of rotation."]
+			dependencies: ["1F346287B2EFD946"]
+			id: "65774DE95397F2DB"
+			tasks: [{
+				id: "3340E825B7B804B4"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "649377509126516C"
+				type: "item"
+				item: "create:shaft"
+				count: 2
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			description: [
+				"The mixer is one of the most usefull machines. It will make alloys, mix potions and craft shapeless recipes."
+				""
+				"It can also be heated with a blaze burner for more complex recipes."
+			]
+			dependencies: ["56BC4C74DBFE7339"]
+			id: "615D3025BB9DFF40"
+			tasks: [
+				{
+					id: "736F5983AE20413E"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "2DF04CC0876B5727"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: ["The mechanical press will make plates and other assortment of recipes."]
+			dependencies: ["56BC4C74DBFE7339"]
+			id: "6BA292F52D0C20B4"
+			tasks: [
+				{
+					id: "05BB049F1857B114"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "0DACD3EE72C525FD"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			description: [
+				"Saws cut down trees. Plain and simple. "
+				"Just have one of these touch a tree and it will cut it down cleanly. Can also hurt mobs."
+			]
+			dependencies: ["56BC4C74DBFE7339"]
+			id: "09FC4BFE2BB52407"
+			tasks: [{
+				id: "4D7A260D1DF1767A"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["56BC4C74DBFE7339"]
+			id: "039D50DF12558AB7"
+			tasks: [{
+				id: "56444AF895104113"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			description: ["Fans can be used for mass smelting, smoking or haunting recipes. Place a fire in front of the fan for smoking, lava for smelting and soul fire for haunting."]
+			dependencies: ["56BC4C74DBFE7339"]
+			id: "10BA28E7B8BDC495"
+			tasks: [{
+				id: "1C167A2D9C5D4824"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			description: ["Drills break any block in front of it. Useful for mining contraptions."]
+			dependencies: ["56BC4C74DBFE7339"]
+			id: "7C27405246538856"
+			tasks: [{
+				id: "5BAE221868880136"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: [
+				"05048DCA3B3AFD2E"
+				"65774DE95397F2DB"
+			]
+			dependency_requirement: "one_completed"
+			id: "56BC4C74DBFE7339"
+			tasks: [{
+				id: "3BBB3F4D477F2887"
+				type: "checkmark"
+				title: "Basic Machines"
+			}]
+			rewards: [{
+				id: "115DCC25D29E9E6E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}
