@@ -1,0 +1,17 @@
+
+["car:bio_diesel"]
+	efficiency = 100
+
+["immersiveengineering:biodiesel"]
+	efficiency = 60
+
+
+["immersivepetroleum:diesel_sulfur"]
+	efficiency = 80
+
+
+["immersivepetroleum:diesel"]
+	efficiency = 100
+
+["createaddition:bioethanol"]
+	efficiency = 70
