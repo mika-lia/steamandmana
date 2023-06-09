@@ -111,7 +111,7 @@ craftingTable.removeByName("mob_grinding_utils:recipe_jumbotank");
 
 
 
-
+Replacer.forMods("littlelogistics").replace(<item:minecraft:iron_ingot>, <item:createdeco:cast_iron_ingot>).suppressWarnings().execute();
 Replacer.forTypes(craftingTable).replaceFully(<item:car:tank>, <item:create:fluid_tank>).suppressWarnings().execute();
 
 //readding engines
@@ -240,8 +240,6 @@ craftingTable.addShaped("vs_eureka.spruce_ship_helm", <item:vs_eureka:spruce_shi
 <recipetype:create:haunting>.addRecipe("spirit_deepslate", [<item:spirit:soul_slate> % 100.0], <item:minecraft:deepslate>, 300);
 
 //mob grinding utils
-
-
 
 craftingTable.removeByName("mob_grinding_utils:recipe_entity_spawner");
 craftingTable.addShaped("mob_grinding_utils.recipe_entity_spawner", <item:mob_grinding_utils:entity_spawner>, [[<item:minecraft:ender_eye>, <item:minecraft:ender_eye>, <item:minecraft:ender_eye>], [<item:blocky_siege:gears>, <item:mob_grinding_utils:solid_xp_block>, <item:immersive_aircraft:industrial_gears>], [<item:immersiveengineering:ingot_steel>, <item:minecraft:nether_star>, <item:immersiveengineering:ingot_steel>]]);
