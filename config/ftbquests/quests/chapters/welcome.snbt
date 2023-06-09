@@ -50,7 +50,7 @@
 			}]
 		}
 		{
-			icon: "cataclysm:gauntlet_of_guard"
+			icon: "cataclysm:void_core"
 			x: 0.0d
 			y: 5.5d
 			dependencies: ["03F49B02FC2B954F"]
@@ -58,13 +58,13 @@
 			tasks: [{
 				id: "2B0286BB5715EDF2"
 				type: "kill"
-				icon: "cataclysm:gauntlet_of_guard"
+				icon: "cataclysm:void_core"
 				entity: "cataclysm:ender_golem"
 				value: 1L
 			}]
 		}
 		{
-			icon: "cataclysm:void_core"
+			icon: "cataclysm:gauntlet_of_guard"
 			x: 0.0d
 			y: 7.0d
 			dependencies: ["04C5706B8781A22B"]
@@ -72,7 +72,7 @@
 			tasks: [{
 				id: "76694D6EF0D0DE41"
 				type: "kill"
-				icon: "cataclysm:void_core"
+				icon: "cataclysm:gauntlet_of_guard"
 				entity: "cataclysm:ender_guardian"
 				value: 1L
 			}]
@@ -166,11 +166,37 @@
 				icon: "mna:greater_mote_fire"
 				structure: "incendium:infernal_altar"
 			}]
+			rewards: [
+				{
+					id: "506689885A7EF37F"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+				}
+				{
+					id: "2C11E471664E79AC"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_regeneration"
+						}
+					}
+					count: 2
+				}
+			]
 		}
 		{
 			title: "Find the Sanctum"
 			x: 3.0d
 			y: 4.0d
+			subtitle: "You're gonna need it"
 			dependencies: ["03F49B02FC2B954F"]
 			id: "4A43DAE1272F220C"
 			tasks: [{
@@ -178,6 +204,36 @@
 				type: "structure"
 				icon: "minecraft:totem_of_undying"
 				structure: "incendium:sanctum"
+			}]
+			rewards: [{
+				id: "78142A9CA42252CD"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_regeneration"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Find the Ruined Lab"
+			x: -3.0d
+			y: 4.0d
+			dependencies: ["03F49B02FC2B954F"]
+			id: "500C09E83208AA53"
+			tasks: [{
+				id: "290733A7A929D049"
+				type: "structure"
+				icon: "minecraft:wither_skeleton_skull"
+				structure: "incendium:ruined_lab"
+			}]
+			rewards: [{
+				id: "4AAC4F1155BBAA2B"
+				type: "item"
+				item: "minecraft:milk_bucket"
 			}]
 		}
 	]

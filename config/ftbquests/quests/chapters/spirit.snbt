@@ -16,7 +16,6 @@
 				"Spirit is a small but useful mod. With it you can gather the souls of mobs you killed to empower your weapons or make mob spawners! "
 				"This mod offers one of the only ways to make a mob farm in Steam and Mana."
 			]
-			dependencies: ["46433569549127F5"]
 			size: 2.0d
 			id: "098D04402F54F9EB"
 			tasks: [{

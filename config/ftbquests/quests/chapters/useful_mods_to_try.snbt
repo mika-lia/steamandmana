@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 1
 	filename: "useful_mods_to_try"
-	title: "Useful mods to try"
+	title: "Useful mods and trinkets"
 	icon: "alexsmobs:mimicream"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -102,7 +102,7 @@
 			title: "Immersive Aircraft"
 			icon: "immersive_aircraft:biplane"
 			x: 3.0d
-			y: 0.5d
+			y: -1.5d
 			description: ["Everybody loves flying. Specially when it's inside a flimsy wooden contraption powered by steam and a bit of courage."]
 			size: 1.5d
 			optional: true
@@ -123,7 +123,7 @@
 			title: "Ultimate Car Mod"
 			icon: "car:oak_body"
 			x: -3.0d
-			y: 0.5d
+			y: -1.5d
 			description: [
 				"Your first powered transportation! Cars are a reliable and fast way to get around your world. "
 				"Just don't forget to build roads!"
@@ -165,35 +165,28 @@
 			subtitle: "Explosive!"
 			description: [
 				"Your goto mob farming mod. This mod has everything, from spawners to brutal killing machines and fans for pushing mobs around. "
-				"Use a swab to get a sample of DNA from a mob then feed that to a chicken to get a spawn egg"
+				"The XP drain tank will allow you to drain your player XP into liquid form and bucket it."
 			]
 			size: 1.5d
 			optional: true
 			id: "046F6E309069E966"
-			tasks: [
-				{
-					id: "0C42717AD088721A"
-					type: "item"
-					item: "mob_grinding_utils:saw"
-				}
-				{
-					id: "7164EE75E267F3EB"
-					type: "item"
-					item: "mob_grinding_utils:gm_chicken_feed"
-				}
-			]
-			rewards: [{
-				id: "32E928FFA32EA128"
+			tasks: [{
+				id: "7DB836A9AEE8DF0C"
 				type: "item"
-				item: "mob_grinding_utils:fan"
+				item: "mob_grinding_utils:tank_sink"
+			}]
+			rewards: [{
+				id: "19DE3D43B322B35D"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 		{
 			x: 0.0d
-			y: 5.0d
+			y: 7.25d
 			subtitle: "One of the few!"
 			description: ["Redstone controllabe spawner. "]
-			dependencies: ["046F6E309069E966"]
+			dependencies: ["3115D68DD5AFA76A"]
 			id: "73034512D51D9960"
 			tasks: [{
 				id: "56CD444C1AFA87D6"
@@ -204,7 +197,220 @@
 				id: "5F54C8B8E2F5B020"
 				type: "item"
 				item: "mob_grinding_utils:solid_xp_baby"
-				count: 6
+				count: 9
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.25d
+			description: ["Rotten eggs are the first way to make a mob farm. It will transform dirt blocks in a 5x5 radius into dreadful dirt that will spawn mobs endlesssly."]
+			dependencies: ["046F6E309069E966"]
+			id: "3115D68DD5AFA76A"
+			tasks: [
+				{
+					id: "2596E2B7CBA055C5"
+					type: "item"
+					item: "mob_grinding_utils:gm_chicken_feed"
+				}
+				{
+					id: "39E2775F5F4197A5"
+					type: "item"
+					item: "mob_grinding_utils:rotten_egg"
+				}
+			]
+			rewards: [{
+				id: "621BBB1FE9481ECF"
+				type: "item"
+				item: "mob_grinding_utils:fan"
+			}]
+		}
+		{
+			title: "Dave's Potioneering"
+			icon: {
+				id: "davespotioneering:rudimentary_gauntlet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.0d
+			y: 3.0d
+			subtitle: "A new way to use potions"
+			description: [
+				"Dave's potioneering allows you to add any potion into a weapon and apply the potion's effects when attacking mobs! "
+				"You need a netherite gauntlet and a potion injector."
+			]
+			size: 1.5d
+			optional: true
+			progression_mode: "flexible"
+			id: "4BA423A5CF035F13"
+			tasks: [
+				{
+					id: "49EBC1592CD24CEE"
+					type: "item"
+					item: {
+						id: "davespotioneering:rudimentary_gauntlet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "67E9DF80AF0A400C"
+					type: "item"
+					item: "davespotioneering:reinforced_cauldron"
+				}
+			]
+			rewards: [{
+				id: "16165AABA89E138E"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.25d
+			dependencies: ["4BA423A5CF035F13"]
+			progression_mode: "flexible"
+			id: "680BB2C464821800"
+			tasks: [
+				{
+					id: "2B863D02C8E4DED3"
+					type: "item"
+					item: {
+						id: "davespotioneering:netherite_gauntlet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "54DA904FBF0D9640"
+					type: "item"
+					item: "davespotioneering:compound_brewing_stand"
+				}
+			]
+			rewards: [{
+				id: "30E058D13A8B538D"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.25d
+			dependencies: ["680BB2C464821800"]
+			progression_mode: "flexible"
+			id: "52B0FC9471E3E5BB"
+			tasks: [
+				{
+					id: "2BB52A88D488AC03"
+					type: "item"
+					item: {
+						id: "davespotioneering:potioneer_gauntlet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5B9B35BCDF327DCD"
+					type: "item"
+					item: "davespotioneering:potion_injector"
+				}
+			]
+			rewards: [{
+				id: "167E507523F8A3ED"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			title: "Blocky Siege"
+			icon: "blocky_siege:ballista_stand"
+			x: 3.0d
+			y: 3.0d
+			description: [
+				"Medieval siege weapons in Minecraft! You can now make war with your friends the old way."
+				"Also you will need the cast iron later, trust me."
+			]
+			size: 1.5d
+			optional: true
+			id: "7E7D6BBB686E59C6"
+			tasks: [
+				{
+					id: "67941F27A448F20D"
+					type: "item"
+					item: "blocky_siege:block_of_cast_iron"
+				}
+				{
+					id: "53AC75FB2ACD0737"
+					type: "item"
+					item: "blocky_siege:charred_planks"
+				}
+			]
+			rewards: [{
+				id: "24F80A91E7E28060"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Little Logistics"
+			icon: "littlelogistics:steam_locomotive"
+			x: -5.5d
+			y: 1.0d
+			description: [
+				"Little logistics is a wonderful mod all about cute little trains and boats. You can transport items, fluids and energy with them."
+				"Aswell as automatic fishing and even building an entire Create contraption on them."
+			]
+			size: 1.5d
+			optional: true
+			progression_mode: "flexible"
+			id: "18612616BA06700B"
+			tasks: [
+				{
+					id: "6A232610E735303C"
+					type: "item"
+					item: "littlelogistics:steam_locomotive"
+				}
+				{
+					id: "150B9C7ADCDE8D8C"
+					type: "item"
+					item: "littlelogistics:tug"
+				}
+			]
+			rewards: [{
+				id: "30B72233E09D6E11"
+				type: "item"
+				item: "createdeco:cast_iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			title: "Fantasy Furniture"
+			x: 5.5d
+			y: 1.0d
+			subtitle: "Finest furniture in town"
+			size: 1.5d
+			optional: true
+			id: "4F9A74FE0CF81D99"
+			tasks: [{
+				id: "26415C10CFEFE965"
+				type: "item"
+				item: "fantasyfurniture:furniture_station"
+			}]
+			rewards: [{
+				id: "3F2E498C954FF28A"
+				type: "xp_levels"
+				xp_levels: 5
 			}]
 		}
 	]
